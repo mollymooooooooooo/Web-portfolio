@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+</head>
+<body>
+    <div class="header-top">
+        <a href="#" class="logo">Malik.<span class="animate" style="--i:1;"></span></a>
+        <nav class="navbar">
+            <button class="link" id="home-link">Главная</button>
+            <button class="link" id="projects-link">Мои работы</button>
+            <button class="link" id="about-link">Обо мне</button>
+            <button class="link" id="contact-link">Обратная связь</button>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+        <button class="btn" id='js-open-modal-btn'>Связаться со мной</button>
+        <div class="bx bx-menu" id="menu-icon"><span class="material-symbols-outlined">
+            menu
+            </span><span class="animate" style="--i:3;"></span></div> 
+    </div>
+    <div class="wrapper">
+        <div class="content">
+            <section class="home show-animate" id="home">
+                <div class="hero-section">
+                    <img data-speed=".6" class="hero" src="img/hero2.jpg" alt="">
+                    <span class="animate home-img" style="--i:9;"></span>
+                </div>
+                <div data-speed=".85" class="home-content">
+                    <span class="blur"></span>
+                    <span class="blur"></span>
+                    <h4>Портфолио</h4>
+                    <h1>Всех приветствую! Я <span>Малик Нургалиев,</span><span class="animate" style="--i:4;"></span></h1>
+                    <div class="text-animate">
+                        <h3>Веб-портфолио</h3>
+                        <span class="animate" style="--i:5;"></span>
+                    </div>
+                    <p>Добро пожаловать в моё портфолио! Здесь вы найдете примеры моих работ, информацию о моих навыках и достижениях, а также сможете связаться со мной для обсуждения потенциальных проектов. 
+                    <p class="home-content-text"><span style="color: #145201;">Моя цель</span> — разрабатывать веб-приложения, которые не только красиво выглядят, но и работают на высоком уровне.</p>
+                    <span class="animate" style="--i:6;"></span>
+                    </p>
+                    <button class="btn" id="start-btn">Начать <span class="animate" style="--i:7;"></span></button>
+                    <div class="home-sci">
+                        <a href="https://t.me/mollyung"><svg width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="telegram-1" d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z" fill = "#fff"/></svg>
+                            <span class="animate" style="--i:8;"></span>
+                        </a>
+                        <a href="https://vk.com/id181254557"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" fill = "#fff"/></svg>
+                            <span class="animate" style="--i:8;"></span>
+                        </a>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="about" id="about">
+                <h2 class="heading">Обо <span>мне</span><span class="animate scroll" style="--i:1;"></span></h2>
+        
+                <div class="about-img">
+                    <img src="img/about-me-img.jpg" alt="">
+                    <span class="circle-spin"></span>
+                </div>
+                <div class="about-content">
+                    <h3>Web-разработчик</h3>
+                    <p class="sub-header">
+                        Меня зовут Малик, и я студент второго курса Казанского Федерального (Приволжского) Университета института Вычислительной математики и информатики
+                        по направлению "Прикладная математика и информатика". Несмотря на то, что я только начинаю свой путь в мире веб-разработки, у меня уже есть твердые основы и огромное желание развиваться в этой области.</p>
+                    <p class="sub-header">Мои основные навыки включают:</p>
+                    <div class="skills-block">
+                        <div class="skills-item">
+                            <div class="skills-item-icon"><span class="material-symbols-outlined">
+                                rebase_edit
+                                </span></div>
+                            <div class="skills-item-header">Front-end</div>
+                            <div class="skills-item-list">HTML, CSS, JavaScript</div>
+                        </div>
+                        <div class="skills-item">
+                            <div class="skills-item-icon"><span class="material-symbols-outlined">
+                                stacks
+                                </span></div>
+                            <div class="skills-item-header">Back-end</div>
+                            <div class="skills-item-list">PHP, Python</div>
+                        </div>
+                        <div class="skills-item">
+                            <div class="skills-item-icon"><span class="material-symbols-outlined">
+                                database
+                                </span></div>
+                            <div class="skills-item-header">Базы данных</div>
+                            <div class="skills-item-list">MySQL, PostgreSQL</div>
+                        </div>
+                        <div class="skills-item">
+                            <div class="skills-item-icon"><span class="material-symbols-outlined">
+                                build
+                                </span></div>
+                            <div class="skills-item-header">Другие технологии</div>
+                            <div class="skills-item-list">Git</div>
+                        </div>
+                    </div>
+                    <p class="sub-header">Я обожаю работать над проектами, которые бросают вызов моим знаниям и способностям, и всегда стремлюсь изучать новые технологии и подходы. Я искренне заинтересован в получении стажировки в IT-компании, где я смогу применить и улучшить свои навыки в индустрии информационных технологий и получить ценный опыт работы.</p>
+            </section>
+            <section class="education" id="education">
+                <h2 class="heading">Мой <span>Путь</span></h2>
+                <div class="education-row">
+                    <div class="education-column">
+                        <h3 class="title">Образование</h3>
+                        <div class="education-box">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><span class="material-symbols-outlined">
+                                        calendar_month
+                                        </span> 2011 - 2022</div>
+                                    <h3>Общеобразовательная школа</h3>
+                                    <p>В 2022 закончил общеобразовательную школу (профильное направление физмат).</p>
+                                </div>
+                            </div>
+        
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><span class="material-symbols-outlined">
+                                        calendar_month
+                                        </span> 2022 - 2026</div>
+                                    <h3>Казанский Федеральный (Приволжский) Университет</h3>
+                                    <p>В 2022 году поступил в КФУ в Институт Вычислительной Математики и Информационных Технологий по направлению "Прикладная математика и информатика".</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="education-column">
+                        <h3 class="title">Опыт</h3>
+                        <div class="education-box">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><span class="material-symbols-outlined">
+                                        calendar_month
+                                        </span> 20xx - 20xx</div>
+                                    <h3>Здесь будет описание моей будущей работы :)</h3>
+                                    <p>lorem ipsum dkor pgekko gmjdd oti kmib orei expedita gitj lgsir  irmi brh.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><span class="material-symbols-outlined">
+                                        calendar_month
+                                        </span> 20xx - 20xx</div>
+                                    <h3>Здесь будет описание моей будущей работы :)</h3>
+                                    <p>lorem ipsum dkor pgekko gmjdd oti kmib orei expedita gitj lgsir  irmi brh.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="portfolio" id="projects">
+                <div class="gallery">
+                    <div data-speed=".8" class="gallery-left">
+
+                        <a href="https://github.com/DragonCaesar2004/Food-helper" class="gallery__item_link">
+                            <img class="gallery__item" src="img/1.jpg" alt="">
+                        </a>
+
+                        <a href="" class="gallery__item_link">
+                            <img class="gallery__item" src="img/2.jpg" alt="">
+                        </a>
+        
+                    </div>
+                    <div data-speed="1.1" class="gallery-right">
+        
+                        <div class="text-block gallery__item">
+                            <h2 class="heading">Мои <span>работы</span></h2>
+                            <p>В этом разделе вы можете ознакомиться с моими работами/проектами (список будет пополняться)</p>
+                        </div>
+        
+                        <a href="" class="gallery__item_link">
+                            <img class = "gallery__item" src="img/3.jpg" alt="">
+                        </a>
+
+                        <a href="" class="gallery__item_link">
+                            <img class = "gallery__item" src="img/4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="contact" id="contact">
+                <h2 class="heading">Оставьте свой <span>отклик</span></h2>
+        
+                <form id="form" action="#" autocomplete="off">
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input id="name" type="text" name="name" placeholder="Имя" autocomplete="off" required>
+                            <span class="focus"></span>
+                        </div>
+                        <div class="input-field">
+                            <input id="email" type="text" name="email" placeholder="Электронная почта" autocomplete="off" required>
+                            <span class="focus"></span>
+                        </div>
+                    </div>
+        
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input id="phone" type="tel" name="phone" placeholder="Телефон" autocomplete="off" required>
+                            <span class="focus"></span>
+                        </div>
+                        <div class="input-field">
+                            <input id="textheader" type="text" name="textheader" placeholder="Тема текста" autocomplete="off" required>
+                            <span class="focus"></span>
+                        </div>
+                    </div>
+                    <div class="textarea-field">
+                        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Ваш текст" autocomplete="off" required></textarea>
+                        <span class="focus"></span>
+                    </div>
+        
+                    <button class="btn" type="submit">Отправить</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <div class="modal" id="js-my-modal">
+        <div class="modal-box">
+            <div class="form-box">
+                <button class="modal-close-btn" id="js-close-my-modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z"></path></svg>
+                </button>
+                <h2>Связаться со мной <span class="material-symbols-outlined">
+                    campaign
+                    </span></h2>
+                <div class="personal-data-box">
+                    <span class="material-symbols-outlined">
+                        person
+                        </span>
+                    <p><span>Имя: </span>Малик Нургалиев</p>
+                </div>
+                <div class="personal-data-box">
+                    <span class="material-symbols-outlined">
+                        call
+                        </span>
+                    <p><span>Телефон: </span> +79373560514</p>
+                </div>
+                <div class="personal-data-box">
+                    <span class="material-symbols-outlined">
+                        mail
+                        </span>
+                    <p><span>Электронная почта: </span>mnurgaliev63@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/gsap/gsap.min.js" defer></script>
+    <script src="js/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="js/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
